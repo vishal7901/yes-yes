@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go on a Date With Me?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffcccb;
+            margin: 0;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h1 {
+            color: #d63384;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: #28a745;
+            color: white;
+        }
+        .no {
+            background-color: #dc3545;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Vishal Here</h1>
+        <h2>Will u chloge ghumne kya mere sath? ❤️</h2>
+        <div class="buttons">
+            <button class="btn yes" onclick="alert('Yay! See you soon! ❤️')">Yes</button>
+            <button class="btn no" id="noButton">No</button>
+        </div>
+    </div>
+
+    <script>
+        const noButton = document.getElementById('noButton');
+        noButton.addEventListener('mouseover', function() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            noButton.style.left = `${x}px`;
+            noButton.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
